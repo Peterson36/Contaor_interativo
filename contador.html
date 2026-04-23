@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8"/>
+<title>Contador Interativo</title>
+</head>
+
+<body>
+
+    <h1 id="numero">0</h1>
+
+<button id="incrementar">Incrementar</button>
+
+<button id="decrementar">Decrementar</button>
+
+<button id="zerar">Zerar</button>
+
+
+<script>
+
+
+const display = document.getElementById("numero");
+
+document.getElementById("incrementar").addEventListener("click", function() {
+    numero++;
+    display.innerHTML = numero;
+});
+
+document.getElementById("decrementar").addEventListener("click", function() {
+    numero--;
+    display.innerHTML = numero;
+});
+
+document.getElementById("zerar").addEventListener("click", function() {
+    numero = 0;
+    display.innerHTML = numero;
+});
+
+    </script>
+
+</body>
+
+</html>
