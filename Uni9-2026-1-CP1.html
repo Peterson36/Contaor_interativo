@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>PetShop Aumicão</title>
+
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial;
+        }
+
+        /* MENU */
+        header{
+            background-color: #ff914d;
+            padding: 15px;
+            color: white;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul{
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* IMAGEM */
+        .banner img{
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        /* SERVIÇOS */
+        .servicos{
+            padding: 20px;
+            text-align: center;
+        }
+
+        .cards{
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .card{
+            border: 1px solid #ccc;
+            padding: 15px;
+            width: 200px;
+            border-radius: 8px;
+        }
+
+        /* RODAPÉ */
+        footer{
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- MENU -->
+    <header>
+        <nav>
+            <h2>PetShop Aumicão</h2>
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- IMAGEM -->
+    <section class="banner">
+        <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80&w=1200&auto=format&fit=crop" alt="PetShop">
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section class="servicos" id="servicos">
+        <h2>Serviços</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Banho</h3>
+                <p>Higiene completa para seu pet.</p>
+            </div>
+
+            <div class="card">
+                <h3>Tosa</h3>
+                <p>Tosa higiênica e estética.</p>
+            </div>
+
+            <div class="card">
+                <h3>Veterinário</h3>
+                <p>Atendimento especializado.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer id="contato">
+        <p>📍 Rua dos Pets, 123 - São Paulo/SP</p>
+        <p>📞 (11) 99999-9999</p>
+    </footer>
+
+</body>
+</html>
